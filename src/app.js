@@ -114,26 +114,26 @@ app.get('/products', (req, res) => {
 
 // Below is the test api for postman which route follow bellow
 
-app.get('/test/data', (req, res) => {
-    res.send({
-        forecast: 'sunny',
-        location: 'Taiwan',
-        name: 'ray'
-    })
-});
+// app.get('/test/data', (req, res) => {
+//     res.send({
+//         forecast: 'sunny',
+//         location: 'Taiwan',
+//         name: 'ray'
+//     })
+// });
 
-app.get('/test/api', (req, res) => {
-    axios.get('https://randomuser.me/api/?results=3')
-    .then((apiRes) => {
-        // console.log(apiRes.data);
-        res.send(apiRes.data);
-    })
-});
+// app.get('/test/api', (req, res) => {
+//     axios.get('https://randomuser.me/api/?results=3')
+//     .then((apiRes) => {
+//         // console.log(apiRes.data);
+//         res.send(apiRes.data);
+//     })
+// });
 
-app.post('/test/apipost', (req, res) => {
-    console.log(req.body);
-    res.send(req.body.name);
-});
+// app.post('/test/apipost', (req, res) => {
+//     console.log(req.body);
+//     res.send(req.body.name);
+// });
 
 // avoid stupid
 
